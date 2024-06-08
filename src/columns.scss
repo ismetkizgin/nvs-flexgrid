@@ -1,0 +1,31 @@
+@import './mixins/media.scss';
+
+@mixin generate-cols($prefix) {
+  @for $i from 1 through 12 {
+    .#{$prefix}-#{$i} {
+      $percentage: calc(percentage($i / 12) - 8px);
+      flex: 0 0 $percentage;
+      max-width: $percentage;
+      padding: 0 4px;
+    }
+  }
+}
+
+@include generate-cols('nvs-col');
+@mixin generate-responsive-cols($prefixes) {
+  @each $prefix, $breakpoint in $prefixes {
+    @include media-breakpoint-up($breakpoint) {
+      @include generate-cols($prefix);
+    }
+  }
+}
+
+@include generate-responsive-cols(
+  (
+    'nvs-col-sm': sm,
+    'nvs-col-md': md,
+    'nvs-col-lg': lg,
+    'nvs-col-xl': xl,
+    'nvs-col-xxl': xxl
+  )
+);
