@@ -1,5 +1,3 @@
-import '../src/container.scss';
-
 import { sizes } from './constants';
 
 export default {
@@ -39,6 +37,12 @@ export const LG = {
 export const XL = {
   args: {
     size: 'xl'
+  }
+};
+
+export const XXL = {
+  args: {
+    size: 'xxl'
   }
 };
 
