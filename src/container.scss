@@ -1,0 +1,49 @@
+@import './mixins/media.scss';
+
+@mixin default-container-style() {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+@mixin responsive-container($sizes) {
+  @each $breakpoint, $max-width in $sizes {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $max-width;
+    }
+  }
+}
+
+.nvs-container {
+  @include default-container-style();
+  @include responsive-container(
+    (
+      sm: 540px,
+      md: 720px,
+      lg: 960px,
+      xl: 1140px,
+      xxl: 1320px
+    )
+  );
+
+  @each $size in sm, md, lg, xl, xxl {
+    &-#{$size} {
+      @include default-container-style();
+      @include responsive-container(
+        (
+          sm: if($size == sm, 540px, null),
+          md: if(index(sm md, $size), 720px, null),
+          lg: if(index(sm md lg, $size), 960px, null),
+          xl: if(index(sm md lg xl, $size), 1140px, null),
+          xxl: if(index(sm md lg xl xxl, $size), 1320px, null)
+        )
+      );
+    }
+  }
+
+  &-fluid {
+    width: 100%;
+    margin: 0 auto;
+    max-width: unset;
+  }
+}
