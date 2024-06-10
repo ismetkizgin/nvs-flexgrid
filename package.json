@@ -48,7 +48,7 @@
   },
   "release-it": {
     "git": {
-      "requireBranch": "main",
+      "requireBranch": "master",
       "tagName": "v${version}"
     },
     "npm": {
