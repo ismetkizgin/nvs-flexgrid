@@ -2,10 +2,15 @@
   "name": "nvs-flexgrid",
   "version": "1.0.0",
   "main": "index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "rm -rf dist && sass ./src/main.scss ./dist/main.css --style compressed"
   },
   "author": "Ismet KIZGIN",
   "license": "MIT",
