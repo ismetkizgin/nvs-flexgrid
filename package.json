@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "rm -rf dist && sass ./src/main.scss ./dist/main.css --style compressed"
+    "build": "rm -rf dist && sass ./src/main.scss ./dist/main.css --style compressed",
+    "release": "release-it"
   },
   "author": "Ismet KIZGIN",
   "license": "MIT",
