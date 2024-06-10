@@ -1,9 +1,10 @@
 {
   "name": "nvs-flexgrid",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "dist/main.css",
   "files": [
     "dist",
+    "packages.json",
     "src"
   ],
   "scripts": {

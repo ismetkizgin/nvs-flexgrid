@@ -1,0 +1,7 @@
+.github
+.storybook
+stories
+.vscode
+.prettierrc
+.gitignore
+node_modules
