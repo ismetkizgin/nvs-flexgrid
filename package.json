@@ -45,5 +45,22 @@
     "sass-loader": "^14.2.1",
     "storybook": "^8.1.5",
     "style-loader": "^4.0.0"
+  },
+  "release-it": {
+    "git": {
+      "requireBranch": "main",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "conventionalcommits"
+        },
+        "infile": "CHANGELOG.md"
+      }
+    }
   }
 }
