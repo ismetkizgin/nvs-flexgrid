@@ -1,5 +1,12 @@
 
 
+## [1.0.3](https://github.com/ismetkizgin/nvs-flexgrid/compare/v1.0.2...v1.0.3) (2024-06-10)
+
+
+### Performance Improvements
+
+* remove sass dependency ([91e9757](https://github.com/ismetkizgin/nvs-flexgrid/commit/91e9757ec558292355747c35ea4c95b79e11eb65))
+
 ## [1.0.2](https://github.com/ismetkizgin/nvs-flexgrid/compare/v1.0.1...v1.0.2) (2024-06-10)
 
 
