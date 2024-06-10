@@ -22,6 +22,7 @@
 
 @include generate-responsive-cols(
   (
+    'nvs-col-xs': xs,
     'nvs-col-sm': sm,
     'nvs-col-md': md,
     'nvs-col-lg': lg,
