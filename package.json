@@ -1,6 +1,6 @@
 {
   "name": "nvs-flexgrid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/main.css",
   "files": [
     "dist",

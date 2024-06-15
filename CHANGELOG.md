@@ -1,5 +1,12 @@
 
 
+## [1.0.4](https://github.com/ismetkizgin/nvs-flexgrid/compare/v1.0.3...v1.0.4) (2024-06-15)
+
+
+### Bug Fixes
+
+* fix for columns system ([a14bad0](https://github.com/ismetkizgin/nvs-flexgrid/commit/a14bad05d33e0c509608edb3cbd5a75e577bfb27))
+
 ## [1.0.3](https://github.com/ismetkizgin/nvs-flexgrid/compare/v1.0.2...v1.0.3) (2024-06-10)
 
 
