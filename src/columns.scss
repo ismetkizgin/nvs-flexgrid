@@ -3,10 +3,11 @@
 @mixin generate-cols($prefix) {
   @for $i from 1 through 12 {
     .#{$prefix}-#{$i} {
-      $percentage: calc(percentage(calc($i / 12)) - 8px);
+      $percentage: calc(percentage(calc($i / 12)));
       flex: 0 0 $percentage;
       max-width: $percentage;
       padding: 0 4px;
+      box-sizing: border-box;
     }
   }
 }
